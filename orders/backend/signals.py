@@ -64,7 +64,7 @@ def new_user_registered_signal(user_id, **kwargs):
 @receiver(new_order)
 def new_order_signal(user_id, **kwargs):
     """
-    Отправляет письмо при изменении статуса заказа
+    отправяем письмо при изменении статуса заказа
     """
     # send an e-mail to the user
     user = User.objects.get(id=user_id)

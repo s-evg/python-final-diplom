@@ -61,7 +61,7 @@ class RegisterAccount(APIView):
 
 class ConfirmAccount(APIView):
     """
-    Класс для подтверждения email
+    Класс для подтверждения почтового адреса
     """
     # Регистрация методом POST
     def post(self, request, *args, **kwargs):
